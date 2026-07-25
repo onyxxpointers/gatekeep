@@ -2,26 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🇮🇱</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>🤐</title>
   <style>
     *, *::before, *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     html, body {
       width: 100%;
       height: 100%;
+      min-height: -webkit-fill-available;
       overflow: hidden;
+      background-color: #000;
     }
-
     body {
-      background-image: url('flag-israel-state.jpg');
+      background-image: url('gatekeeping.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+    }
+    /* Portrait mobile: switch to contain so the image/text aren't cropped */
+    @media (orientation: portrait) and (max-width: 768px) {
+      body {
+        background-size: contain;
+        background-position: center center;
+      }
     }
   </style>
 </head>
